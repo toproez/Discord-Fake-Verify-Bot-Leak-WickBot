@@ -1,5 +1,5 @@
 {
-    "botToken": "TOKEN-HERE // ТОКЕН-БОТА",
-    "prefix": "PREFIX-HERE // ПРЕФИКС-БОТА",
-    "command_name": "COMMAND-NAME-HERE // НАЗВАНИЕ-КОМАНДЫ-СТАРТА"
+    "botToken": "OTg0NjI5OTI0MjgxMzQ0MDAw.GFZqEY.mW9v6j21baVDFdIdL6uUd-yitGlb3nYbhX0sNk",
+    "prefix": ".",
+    "command_name": "verify"
 }
